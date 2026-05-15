@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kim Bregman — Exclusive Buyer's Agent | Optima Properties</title>
+<meta name="description" content="Kim Bregman of Optima Properties — South Florida's only Certified Exclusive Buyer Agent. 40 years representing buyers in Palm Beach & Broward Counties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Core palette — Option C (Navy & Seaglass) */
+    --cream: #F2EFE8;
+    --warm-white: #F8F5EE;
+    --dark: #1B2F3F;
+    --dark-soft: #38556B;
+    --accent: #7AB5AA;
+    --accent-dark: #4A8479;
+    --accent-light: #C9DDD7;
+    --sand: #DBD5C9;
+    --text-muted: #5C504A;
+
+    /* RGB triplets */
+    --accent-rgb: 122, 181, 170;
+    --dark-rgb: 27, 47, 63;
+    --warm-white-rgb: 248, 245, 238;
+    --hero-overlay-tint: 5, 12, 22;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--dark-soft);
+    background: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .nav-brand .sub {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.32em;
+    color: var(--accent-light);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent);
+    color: var(--dark) !important;
+    padding: 11px 22px;
+    border-radius: 2px;
+    font-weight: 500;
+    letter-spacing: 0.14em !important;
+    transition: background 0.3s;
+  }
+  .nav-cta:hover { background: var(--accent-dark); color: #fff !important; }
+  .nav-cta-mobile { display: none; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 640px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(var(--hero-overlay-tint), 0.55) 0%,
+      rgba(var(--hero-overlay-tint), 0.68) 50%,
+      rgba(var(--hero-overlay-tint), 0.93) 100%
+    );
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 920px;
+    padding: 0 40px;
+    color: #fff;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(52px, 7.5vw, 90px);
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent-light);
+  }
+  .hero-sub {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 580px;
+    margin: 0 auto 44px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.92);
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 15px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--dark);
+  }
+  .btn-primary:hover {
+    background: var(--accent-dark);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+  }
+  .btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+  }
+  .scroll-indicator {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: var(--accent-light);
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.85;
+  }
+  .scroll-indicator::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 36px;
+    background: var(--accent-light);
+    margin: 14px auto 0;
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(0.7); }
+    50% { opacity: 1; transform: scaleY(1); }
+  }
+
+  /* ---------- Stats Bar ---------- */
+  .stats {
+    background: var(--dark);
+    padding: 64px 40px;
+    color: #fff;
+  }
+  .stats-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+  .stat {
+    text-align: center;
+    position: relative;
+  }
+  .stat:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background: rgba(var(--accent-rgb), 0.25);
+  }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+  }
+
+  /* ---------- Section base ---------- */
+  section {
+    padding: 96px 40px;
+  }
+  .section-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--accent-dark);
+  }
+  .section-intro {
+    max-width: 620px;
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--text-muted);
+  }
+
+  /* ---------- About ---------- */
+  .about { background: var(--cream); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 72px;
+    align-items: start;
+  }
+  .headshot-col {
+    position: relative;
+  }
+  .headshot-wrap {
+    max-width: 420px;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--sand);
+  }
+  .headshot-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .headshot-badge {
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+    background: var(--dark);
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: 2px;
+    max-width: 220px;
+  }
+  .headshot-badge .label {
+    font-size: 9px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .headshot-badge .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .about-content h2 { margin-bottom: 32px; }
+  .about-bio {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+  .about-bio strong {
+    color: var(--dark-soft);
+    font-weight: 500;
+  }
+  .certs {
+    margin-top: 36px;
+    padding-top: 32px;
+    border-top: 1px solid var(--sand);
+  }
+  .certs-label {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .cert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .cert-pill {
+    background: var(--accent-light);
+    color: var(--dark);
+    padding: 8px 14px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    border-radius: 2px;
+    border: 1px solid rgba(var(--accent-rgb), 0.4);
+    font-weight: 500;
+  }
+
+  /* ---------- Communities (listings reframed) ---------- */
+  .communities { background: var(--warm-white); }
+  .communities-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 56px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .communities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .community-card {
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  .community-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px -20px rgba(var(--dark-rgb), 0.18);
+  }
+  .community-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+  }
+  .community-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+  }
+  .community-card:hover .community-image img {
+    transform: scale(1.06);
+  }
+  .community-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(var(--dark-rgb), 0.85);
+    color: var(--accent-light);
+    padding: 5px 11px;
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+  }
+  .community-body {
+    padding: 24px 24px 28px;
+  }
+  .community-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .community-meta {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .community-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* ---------- Specialties ---------- */
+  .specialties { background: var(--cream); }
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 56px;
+  }
+  .specialty {
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .specialty:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px -20px rgba(var(--dark-rgb), 0.15);
+  }
+  .specialty-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .specialty-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .specialty-body {
+    padding: 32px 32px 36px;
+  }
+  .specialty-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .specialty-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .specialty-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials {
+    background: var(--dark);
+    color: #fff;
+    overflow: hidden;
+    padding: 96px 0;
+  }
+  .testimonials .section-inner { padding: 0 40px; }
+  .testimonials .section-title { color: #fff; }
+  .testimonials .eyebrow { color: var(--accent); }
+  .testimonials .section-intro { color: rgba(255,255,255,0.7); }
+
+  .slider-wrap {
+    margin-top: 56px;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 40px;
+    cursor: grab;
+  }
+  .slider::-webkit-scrollbar { display: none; }
+  .slider:active { cursor: grabbing; }
+  .testimonial {
+    flex: 0 0 calc(85% - 20px);
+    max-width: 680px;
+    background: #fff;
+    color: var(--dark-soft);
+    padding: 44px 40px 36px;
+    border-radius: 2px;
+    scroll-snap-align: start;
+  }
+  @media (min-width: 961px) {
+    .testimonial { flex: 0 0 calc(50% - 12px); }
+  }
+  .testimonial-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--dark);
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+  .testimonial-quote::before {
+    content: '"';
+    font-size: 48px;
+    color: var(--accent);
+    line-height: 0;
+    vertical-align: -10px;
+    margin-right: 4px;
+  }
+  .testimonial-author {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    font-weight: 500;
+  }
+  .testimonial-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.06em;
+  }
+
+  .slider-controls {
+    max-width: 1080px;
+    margin: 44px auto 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .slider-dots {
+    display: flex;
+    gap: 10px;
+  }
+  .slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s;
+  }
+  .slider-dot.active { background: var(--accent); }
+  .slider-arrows {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .slider-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--accent-rgb), 0.4);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-arrow:hover {
+    background: var(--accent);
+    color: var(--dark);
+    border-color: var(--accent);
+  }
+  .slider-counter {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.2em;
+    margin-left: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .slider-counter .current { color: var(--accent); }
+
+  /* ---------- Contact ---------- */
+  .contact { background: var(--warm-white); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 72px;
+    margin-top: 56px;
+    align-items: start;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .contact-item {
+    display: flex;
+    gap: 18px;
+    align-items: start;
+  }
+  .contact-icon {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    background: var(--accent-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--dark-soft);
+    stroke-width: 1.75;
+    fill: none;
+  }
+  .contact-item > div:last-child {
+    min-width: 0;
+    flex: 1;
+  }
+  .contact-item .label {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .contact-item .val {
+    font-size: 15px;
+    color: var(--dark);
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .contact-item .val:hover { color: var(--accent-dark); }
+
+  .contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 2px;
+  }
+  .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .form-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .form-field {
+    margin-bottom: 14px;
+  }
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--sand);
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--dark);
+    background: var(--warm-white);
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #fff;
+  }
+  .form-textarea {
+    resize: vertical;
+    min-height: 110px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .form-submit {
+    width: 100%;
+    background: var(--dark);
+    color: #fff;
+    padding: 16px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .form-submit:hover { background: var(--accent-dark); }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.7);
+    padding: 80px 40px 100px;
+  }
+  .footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .footer-sub {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 36px;
+    font-weight: 500;
+  }
+  .footer-certs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .footer-cert {
+    border: 1px solid rgba(var(--accent-rgb), 0.4);
+    color: rgba(255,255,255,0.85);
+    padding: 7px 14px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+  .footer-disclaimer {
+    padding-top: 32px;
+    border-top: 1px solid rgba(var(--accent-rgb), 0.18);
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* ---------- Sticky Bar ---------- */
+  .sticky-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 90;
+    background: var(--dark);
+    color: #fff;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-top: 1px solid rgba(var(--accent-rgb), 0.2);
+    white-space: nowrap;
+  }
+  .sticky-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 400;
+  }
+  .sticky-text strong {
+    color: var(--accent-light);
+    font-weight: 500;
+  }
+  .sticky-text-mobile { display: none; }
+  .sticky-cta {
+    background: var(--accent);
+    color: var(--dark) !important;
+    padding: 9px 18px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    white-space: nowrap;
+  }
+  .sticky-cta:hover { background: var(--accent-dark); color: #fff !important; }
+
+  /* ---------- Popup ---------- */
+  .popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(var(--dark-rgb), 0.7);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+  }
+  .popup-overlay.active { display: flex; }
+  .popup {
+    background: var(--warm-white);
+    max-width: 880px;
+    width: 100%;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    animation: popupIn 0.5s ease-out;
+  }
+  @keyframes popupIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .popup-image {
+    background-size: cover;
+    background-position: bottom;
+    min-height: 360px;
+  }
+  .popup-content {
+    padding: 48px 44px;
+  }
+  .popup-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .popup-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .popup-title em {
+    font-style: italic;
+    color: var(--accent-dark);
+  }
+  .popup-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .popup-form .form-input {
+    margin-bottom: 12px;
+  }
+  .popup-submit {
+    width: 100%;
+    background: var(--dark);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .popup-submit:hover { background: var(--accent-dark); }
+  .popup-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background: rgba(var(--warm-white-rgb), 0.95);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+  }
+  .popup-close:hover { transform: rotate(90deg); }
+  .popup-success {
+    text-align: center;
+    padding: 40px 0;
+    display: none;
+  }
+  .popup-success.active { display: block; }
+  .popup-success-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  /* ---------- Scroll Reveal ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .d1 { transition-delay: 0.1s; }
+  .d2 { transition-delay: 0.2s; }
+  .d3 { transition-delay: 0.3s; }
+
+  /* ---------- Responsive: Tablet ---------- */
+  @media (max-width: 960px) {
+    .nav { padding: 20px 24px; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+    .headshot-wrap { max-width: 360px; margin: 0 auto; }
+    .headshot-badge {
+      position: static;
+      max-width: 360px;
+      margin: 14px auto 0;
+      text-align: center;
+    }
+    .communities-grid { grid-template-columns: repeat(2, 1fr); }
+    .specialties-grid { grid-template-columns: 1fr; }
+    .testimonial { flex: 0 0 80%; }
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .popup {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+    }
+    .popup-image {
+      min-height: 200px;
+      max-height: 220px;
+    }
+    .popup-content { padding: 36px 28px; }
+  }
+
+  /* ---------- Responsive: Mobile ---------- */
+  @media (max-width: 640px) {
+    .nav {
+      padding: 16px 20px;
+    }
+    .nav-brand {
+      font-size: 18px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .nav-brand .sub { display: none; }
+    .nav-cta-mobile {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--dark);
+      padding: 10px 14px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      border-radius: 2px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .nav-links { display: none; }
+    section { padding: 64px 20px; }
+    .hero { min-height: 580px; }
+    .hero-content { padding: 0 20px; padding-bottom: 80px; }
+    .hero-title { font-size: 44px; }
+    .hero-sub { font-size: 14px; margin-bottom: 32px; }
+    .hero-buttons { flex-direction: column; gap: 12px; width: 100%; }
+    .hero-buttons .btn { width: 100%; }
+    .scroll-indicator { bottom: 20px; font-size: 9px; }
+    .scroll-indicator::after { height: 24px; }
+    .stats { padding: 48px 20px; }
+    .stats-inner { grid-template-columns: 1fr; gap: 36px; }
+    .stat:not(:last-child)::after {
+      display: none;
+    }
+    .stat-num { font-size: 52px; }
+    .about-grid { gap: 48px; }
+    .communities-grid { grid-template-columns: 1fr; }
+    .testimonials { padding: 64px 0; }
+    .testimonials .section-inner { padding: 0 20px; }
+    .slider { padding: 0 20px; }
+    .slider-controls { padding: 0 20px; }
+    .testimonial { flex: 0 0 88%; padding: 32px 28px 28px; }
+    .testimonial-quote { font-size: 18px; }
+    .contact-form { padding: 28px 22px; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-item .val {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+    }
+    .footer { padding: 64px 20px 100px; }
+    .footer-brand { font-size: 24px; }
+    .sticky-bar {
+      padding: 10px 16px;
+      gap: 12px;
+    }
+    .sticky-text-desktop { display: none; }
+    .sticky-text-mobile { display: inline; }
+    .sticky-text { font-size: 12px; }
+    .sticky-cta { padding: 8px 14px; font-size: 11px; }
+    .popup-content { padding: 32px 24px; }
+    .popup-title { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" aria-label="Primary">
+  <a href="#" class="nav-brand">
+    Optima Properties
+    <span class="sub">Kim Bregman, Broker</span>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#communities">Communities</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:5612517170" class="nav-cta">561.251.7170</a>
+  </div>
+  <a href="tel:5612517170" class="nav-cta-mobile">561.251.7170</a>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto"
+         poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80&fit=crop">
+    <source src="https://videos.pexels.com/video-files/3773486/3773486-uhd_3840_2160_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Palm Beach &middot; Broward &middot; Since 1985</div>
+    <h1 class="hero-title">
+      An advocate for buyers.<br>
+      <em>Only buyers.</em>
+    </h1>
+    <p class="hero-sub">
+      For 40 years, South Florida's only Certified Exclusive Buyer Agent — never representing a seller, always representing you.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+      <a href="#approach" class="btn btn-secondary">Why an Exclusive Buyer Agent</a>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats" aria-label="Experience">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">40</div>
+      <div class="stat-label">Years Representing Buyers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Fiduciary to Buyers Only</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1</div>
+      <div class="stat-label">Certified EBA in Palm Beach &amp; Broward</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="headshot-col reveal">
+        <div class="headshot-wrap">
+          <img src="https://www.optimaproperties.com/wp-content/uploads/2014/10/kim.jpg"
+               alt="Kim Bregman, Broker and Exclusive Buyer Agent at Optima Properties"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=800&q=80&fit=crop';">
+        </div>
+        <div class="headshot-badge">
+          <div class="label">Owner &middot; Broker</div>
+          <div class="name">Kim N. Bregman<br>EBA, CEBA, ABR, MBA</div>
+        </div>
+      </div>
+      <div class="about-content reveal d1">
+        <div class="eyebrow">Meet Kim</div>
+        <h2 class="section-title">Forty years of <em>fiduciary duty</em> to buyers.</h2>
+        <p class="about-bio">
+          Kim Bregman is the <strong>only Certified Exclusive Buyer Agent serving Palm Beach and Broward Counties</strong> — and has been for over four decades. She has never represented a seller. Not once.
+        </p>
+        <p class="about-bio">
+          That distinction matters. In a Florida market where 99.9% of agents work as transactional agents, Kim owes a single, undivided fiduciary duty — to the buyer. She acts as advocate, researcher, advisor, and negotiator, with no conflicts and no divided loyalties.
+        </p>
+        <p class="about-bio">
+          A second-generation native Floridian with an MBA from the University of Florida, Kim founded Optima Properties in 1985 and has built a four-decade business almost entirely on client referrals.
+        </p>
+        <div class="certs">
+          <div class="certs-label">Credentials</div>
+          <div class="cert-pills">
+            <span class="cert-pill">CEBA</span>
+            <span class="cert-pill">EBA</span>
+            <span class="cert-pill">ABR</span>
+            <span class="cert-pill">MBA, Univ. of Florida</span>
+            <span class="cert-pill">REALTOR&reg;</span>
+            <span class="cert-pill">RSPS</span>
+            <span class="cert-pill">NAEBA Member</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMUNITIES (LISTINGS REFRAME) ===================== -->
+<section class="communities" id="communities">
+  <div class="section-inner">
+    <div class="communities-head">
+      <div class="reveal">
+        <div class="eyebrow">Communities</div>
+        <h2 class="section-title">Where my <em>clients</em> are buying.</h2>
+      </div>
+      <p class="section-intro reveal d1">
+        Forty years in Palm Beach and Broward means deep knowledge of the communities that matter — from GL Homes' Valencia and Seven Bridges to the gated golf clubs of Boca Raton. Every recommendation is grounded in a buyer's perspective, never a seller's.
+      </p>
+    </div>
+
+    <div class="communities-grid">
+      <article class="community-card reveal">
+        <div class="community-image">
+          <span class="community-tag">GL Homes &middot; 55+</span>
+          <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80&fit=crop"
+               alt="Resort-style pool at Valencia Isles community"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Valencia Isles</h3>
+          <div class="community-meta">Boynton Beach &middot; Active Adult</div>
+          <p class="community-desc">A signature GL Homes 55+ community with a 39,000 sq ft clubhouse, championship tennis, and resort-style amenities.</p>
+        </div>
+      </article>
+
+      <article class="community-card reveal d1">
+        <div class="community-image">
+          <span class="community-tag">GL Homes</span>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&fit=crop"
+               alt="Luxury home exterior in Seven Bridges community"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Seven Bridges</h3>
+          <div class="community-meta">Delray Beach &middot; Luxury Family</div>
+          <p class="community-desc">GL Homes' flagship luxury family community — A-rated schools, custom estates, and a 30,000 sq ft clubhouse.</p>
+        </div>
+      </article>
+
+      <article class="community-card reveal d2">
+        <div class="community-image">
+          <span class="community-tag">55+</span>
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&q=80&fit=crop"
+               alt="Golf course at Cascade Lakes community"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Cascade Lakes</h3>
+          <div class="community-meta">Boynton Beach &middot; Active Adult</div>
+          <p class="community-desc">Elegant 55+ community with eight lakes, a 28,000 sq ft clubhouse, and a tightly-knit social calendar.</p>
+        </div>
+      </article>
+
+      <article class="community-card reveal">
+        <div class="community-image">
+          <span class="community-tag">Golf Club</span>
+          <img src="https://images.unsplash.com/photo-1592595896616-c37162298647?w=800&q=80&fit=crop"
+               alt="Aerial view of luxury golf course at Boca West"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Boca West Country Club</h3>
+          <div class="community-meta">Boca Raton &middot; Luxury Golf</div>
+          <p class="community-desc">One of America's premier golf and country club communities — four championship courses, a $50M clubhouse, and a private gated lifestyle.</p>
+        </div>
+      </article>
+
+      <article class="community-card reveal d1">
+        <div class="community-image">
+          <span class="community-tag">Oceanfront</span>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&fit=crop"
+               alt="Oceanfront beach in Highland Beach Florida"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Highland Beach</h3>
+          <div class="community-meta">Palm Beach County &middot; Oceanfront</div>
+          <p class="community-desc">A three-mile stretch of low-key luxury between Boca Raton and Delray — oceanfront condos, gated estates, and a quieter pace.</p>
+        </div>
+      </article>
+
+      <article class="community-card reveal d2">
+        <div class="community-image">
+          <span class="community-tag">Golf Club</span>
+          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&q=80&fit=crop"
+               alt="Clubhouse at Mizner Country Club"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1592595896616-c37162298647?w=800&q=80&fit=crop';">
+        </div>
+        <div class="community-body">
+          <h3 class="community-name">Mizner Country Club</h3>
+          <div class="community-meta">Delray Beach &middot; Luxury Golf</div>
+          <p class="community-desc">An Arnold Palmer-designed course inside a gated luxury enclave — equity-membership lifestyle for established families.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPECIALTIES / APPROACH ===================== -->
+<section class="specialties" id="approach">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="eyebrow">The Approach</div>
+      <h2 class="section-title">Why work with an <em>Exclusive</em> Buyer Agent.</h2>
+      <p class="section-intro">
+        In Florida, 99.9% of real estate agents are transactional — meaning they owe no fiduciary duty to either side. Exclusive Buyer Agency is different by design.
+      </p>
+    </div>
+
+    <div class="specialties-grid">
+      <article class="specialty reveal">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80&fit=crop"
+               alt="Two professionals reviewing real estate documents at clubhouse terrace"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&fit=crop';">
+        </div>
+        <div class="specialty-body">
+          <div class="specialty-eyebrow">Single Agency</div>
+          <h3 class="specialty-title">Never a seller's side, ever.</h3>
+          <p class="specialty-desc">Every recommendation, every negotiation, every piece of advice is owed entirely to you. No dual agency, no shifting loyalties, no transactional handoffs.</p>
+        </div>
+      </article>
+
+      <article class="specialty reveal d1">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80&fit=crop"
+               alt="Family touring a new construction home"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&q=80&fit=crop';">
+        </div>
+        <div class="specialty-body">
+          <div class="specialty-eyebrow">New Construction</div>
+          <h3 class="specialty-title">A counterweight to the builder's rep.</h3>
+          <p class="specialty-desc">The on-site sales rep works for the builder. Kim works for you — reviewing incentives, lot premiums, and contracts with four decades of perspective on what's negotiable.</p>
+        </div>
+      </article>
+
+      <article class="specialty reveal d2">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&fit=crop"
+               alt="Couple meeting with real estate advisor over coffee"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80&fit=crop';">
+        </div>
+        <div class="specialty-body">
+          <div class="specialty-eyebrow">Relocation</div>
+          <h3 class="specialty-title">Florida, properly explained.</h3>
+          <p class="specialty-desc">Insurance, building codes, hurricane considerations, HOA quirks — the things long-time Floridians forget to mention. Kim makes sure you know what you're buying into.</p>
+        </div>
+      </article>
+
+      <article class="specialty reveal d3">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80&fit=crop"
+               alt="Wooden model home and key — symbolizing a real estate investment decision"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1733244766159-f58f4184fd38?w=1200&q=80&fit=crop';">
+        </div>
+        <div class="specialty-body">
+          <div class="specialty-eyebrow">Investment &amp; Second Homes</div>
+          <h3 class="specialty-title">Numbers, not narratives.</h3>
+          <p class="specialty-desc">With an MBA and four decades of South Florida market data, Kim evaluates rental yield, tax exposure, and resale potential — and tells you when a property doesn't pencil out.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="eyebrow">Client Voices</div>
+      <h2 class="section-title">Four decades of <em>referrals.</em></h2>
+      <p class="section-intro">
+        Optima Properties has been built almost entirely on client referrals. Here's what they say.
+      </p>
+    </div>
+  </div>
+
+  <div class="slider-wrap">
+    <div class="slider" role="list" id="slider">
+      <article class="testimonial" role="listitem">
+        <p class="testimonial-quote">Kim met my requirements and far exceeded my expectations. She is very flexible, easy to work with and definitely dedicated to the clients she represents. There is no dual agency with Kim, she represents the buyer exclusively. She is an experienced professional with specific skills and a level of expertise which made the entire home buying process successful.</p>
+        <div class="testimonial-author">Buyer &middot; Palm Beach County</div>
+        <div class="testimonial-meta">Found Kim through online recommendations</div>
+      </article>
+
+      <article class="testimonial" role="listitem">
+        <p class="testimonial-quote">With Kim's help, my husband and I purchased a home and Kim made it easy in this crazy sellers' market. Kim took us through every step and provided buyer-exclusive guidance that we know we can trust without any hesitation. We highly recommend using Kim Bregman — she is the BEST out there.</p>
+        <div class="testimonial-author">Family Buyer &middot; Boynton Beach</div>
+        <div class="testimonial-meta">Closed August 2021</div>
+      </article>
+
+      <article class="testimonial" role="listitem">
+        <p class="testimonial-quote">Kim found a house for us at the peak of the hot buying season in Florida. She successfully negotiated with the seller, and guided us through the purchase process. She brought her team of experienced professionals who took care of the inspection and legal, and led us to closing. On her own initiative, Kim also provided us with information about life in Florida.</p>
+        <div class="testimonial-author">Out-of-State Buyer &middot; Relocation</div>
+        <div class="testimonial-meta">First-time Florida purchase</div>
+      </article>
+
+      <article class="testimonial" role="listitem">
+        <p class="testimonial-quote">My husband and I wholeheartedly recommend Kim Bregman as an exceptional Realtor and Buyer's Agent. Her exceptional listening skills and understanding of client needs truly set her apart. Having moved over six times as a couple and family, we can confidently say that Kim is the best agent we've ever worked with.</p>
+        <div class="testimonial-author">Repeat Client &middot; New Construction</div>
+        <div class="testimonial-meta">Purchased a new build in Palm Beach</div>
+      </article>
+    </div>
+
+    <div class="slider-controls">
+      <div class="slider-dots" id="sliderDots" role="tablist"></div>
+      <div class="slider-arrows">
+        <button class="slider-arrow" id="prevBtn" aria-label="Previous testimonial">&#8592;</button>
+        <button class="slider-arrow" id="nextBtn" aria-label="Next testimonial">&#8594;</button>
+        <span class="slider-counter"><span class="current">1</span> / 4</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <h2 class="section-title">A <em>complimentary</em> buyer consultation.</h2>
+      <p class="section-intro">
+        Whether you're relocating to South Florida, exploring 55+ communities, or evaluating a new construction purchase — start with a conversation. No obligation, no pressure.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="label">Cell</div>
+            <a href="tel:5612517170" class="val">561.251.7170</a>
+          </div>
+        </div>
+
+        <div class="contact-item reveal d1">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:kim@optimaproperties.com" class="val">kim@optimaproperties.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item reveal d2">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="label">Service Area</div>
+            <div class="val">Palm Beach &amp; Broward Counties</div>
+          </div>
+        </div>
+
+        <div class="contact-item reveal d3">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="2" y1="12" x2="22" y2="12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="label">Online</div>
+            <a href="https://www.optimaproperties.com" class="val">optimaproperties.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal d1">
+        <div class="form-title">Start a conversation</div>
+        <div class="form-sub">I'll respond personally within one business day.</div>
+        <div class="form-row">
+          <div class="form-field" style="margin: 0;">
+            <input type="text" class="form-input" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="form-field" style="margin: 0;">
+            <input type="text" class="form-input" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <div class="form-field">
+          <input type="email" class="form-input" placeholder="Email address" aria-label="Email address">
+        </div>
+        <div class="form-field">
+          <input type="tel" class="form-input" placeholder="Phone (optional)" aria-label="Phone number">
+        </div>
+        <div class="form-field">
+          <textarea class="form-textarea" placeholder="Tell me about your search — community, timeline, anything I should know." aria-label="Your message"></textarea>
+        </div>
+        <button type="button" class="form-submit" onclick="alert('Demo form — Kim will hook up real submission')">Request Consultation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Optima Properties</div>
+    <div class="footer-sub">Kim N. Bregman &middot; Licensed Real Estate Broker</div>
+    <div class="footer-certs">
+      <span class="footer-cert">EBA</span>
+      <span class="footer-cert">CEBA</span>
+      <span class="footer-cert">ABR</span>
+      <span class="footer-cert">REALTOR&reg;</span>
+      <span class="footer-cert">MBA</span>
+      <span class="footer-cert">RSPS</span>
+      <span class="footer-cert">NAEBA Member</span>
+    </div>
+    <p class="footer-disclaimer">
+      All information is provided by the licensed REALTOR&reg;/Broker/Agent and is not verified for authenticity or accuracy. This website is not responsible or liable in any manner for any content posted herein or in connection with our services. &copy; 2026 Optima Properties. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== STICKY BAR ===================== -->
+<div class="sticky-bar">
+  <span class="sticky-text sticky-text-desktop"><strong>Considering a move?</strong> Schedule a complimentary buyer consultation.</span>
+  <span class="sticky-text sticky-text-mobile"><strong>Buyer consultation —</strong> no obligation.</span>
+  <a href="tel:5612517170" class="sticky-cta">Call Kim</a>
+</div>
+
+<!-- ===================== POPUP ===================== -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <div class="popup-image" style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80&fit=crop&crop=bottom');"></div>
+    <div class="popup-content">
+      <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+      <div class="popup-form-wrap" id="popupForm">
+        <div class="popup-eyebrow">Buyer's Resource</div>
+        <h3 class="popup-title">South Florida community <em>guide</em>, on me.</h3>
+        <p class="popup-desc">A quiet walkthrough of Palm Beach and Broward communities — GL Homes, 55+ active adult, oceanfront, and luxury golf — with the things sellers' agents rarely mention.</p>
+        <input type="email" class="form-input" placeholder="Your email" aria-label="Email for community guide" id="popupEmail">
+        <button type="button" class="popup-submit" id="popupSubmit">Send Me The Guide</button>
+      </div>
+      <div class="popup-success" id="popupSuccess">
+        <div class="popup-success-title">On its way.</div>
+        <p class="popup-desc">Check your inbox — you'll have the guide within a minute.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Scroll Reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+  revealEls.forEach(el => io.observe(el));
+
+  // Testimonial Slider
+  const slider = document.getElementById('slider');
+  const testimonials = slider.querySelectorAll('.testimonial');
+  const dotsContainer = document.getElementById('sliderDots');
+  const counter = document.querySelector('.slider-counter .current');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  testimonials.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', `Testimonial ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  let currentIdx = 0;
+  function goTo(i) {
+    currentIdx = Math.max(0, Math.min(testimonials.length - 1, i));
+    const card = testimonials[currentIdx];
+    slider.scrollTo({ left: card.offsetLeft - slider.offsetLeft - 40, behavior: 'smooth' });
+    updateDots();
+  }
+  function updateDots() {
+    dotsContainer.querySelectorAll('.slider-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === currentIdx));
+    counter.textContent = currentIdx + 1;
+  }
+  prevBtn.addEventListener('click', () => goTo(currentIdx - 1));
+  nextBtn.addEventListener('click', () => goTo(currentIdx + 1));
+
+  // Sync dots on natural scroll/drag
+  let scrollTimeout;
+  slider.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      let nearest = 0;
+      let minDist = Infinity;
+      testimonials.forEach((card, i) => {
+        const dist = Math.abs(card.offsetLeft - slider.scrollLeft - slider.offsetLeft);
+        if (dist < minDist) { minDist = dist; nearest = i; }
+      });
+      currentIdx = nearest;
+      updateDots();
+    }, 80);
+  });
+
+  // Desktop drag-to-scroll
+  let isDown = false, startX, startLeft;
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    startLeft = slider.scrollLeft;
+  });
+  slider.addEventListener('mouseleave', () => isDown = false);
+  slider.addEventListener('mouseup', () => isDown = false);
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    slider.scrollLeft = startLeft - (x - startX);
+  });
+
+  // Popup
+  const popup = document.getElementById('popup');
+  const popupClose = document.getElementById('popupClose');
+  const popupSubmit = document.getElementById('popupSubmit');
+  const popupForm = document.getElementById('popupForm');
+  const popupSuccess = document.getElementById('popupSuccess');
+  const STORAGE_KEY = 'kb_popup_dismissed';
+
+  function showPopup() {
+    if (sessionStorage.getItem(STORAGE_KEY)) return;
+    popup.classList.add('active');
+  }
+  function hidePopup() {
+    popup.classList.remove('active');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+  }
+
+  setTimeout(showPopup, 4000);
+
+  popupClose.addEventListener('click', hidePopup);
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) hidePopup();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && popup.classList.contains('active')) hidePopup();
+  });
+  popupSubmit.addEventListener('click', () => {
+    popupForm.style.display = 'none';
+    popupSuccess.classList.add('active');
+    setTimeout(hidePopup, 3000);
+  });
+</script>
+
+</body>
+</html>
